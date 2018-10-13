@@ -8,7 +8,7 @@ client = commands.Bot(command_prefix = '')
 players = {}
 
 @client.event
-async def on_ready()
+async def on_ready():
     print('Bot Online.')
 
     @client.command(pass_context=True)
