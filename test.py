@@ -12,18 +12,18 @@ async def on_ready():
     print('Bot Online.')
 
     @client.command(pass_context=True)
-    async def join(ctx)
+    async def join(ctx):
         channel = ctx.message.author.voice.voice_channel
         await client.join_voice_channel(channel)
 
 @client.command(pass_context=True)
-async def leave(ctx)
+async def leave(ctx):
     server = ctx.message.server
     voice_client = client.voice_client_in(server)
     await voice_client.disconnect()
 
     @client.coomands(pass_context=True)
-    async def play(ctx, url)
+    async def play(ctx, url):
         server = ctx.message.server
         voice_client = client.voice_client_in(server)
         player = await voice_client.create_ytdl_player(url)
