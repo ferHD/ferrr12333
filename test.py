@@ -1,8 +1,7 @@
-import discord
+ bot.run['BOT_TOKEN']import discord
 import youtube_dl
 from discord.ext import commands
 
-TOKEN = 'NDMyNTUzMzg1MjA4NzA5MTIx.DqNsHA.k-_fm8rYRJuvYm6HQOBJbULVInk'
 client = commands.Bot(command_prefix = '*')
 
 players = {}
@@ -30,4 +29,4 @@ async def leave(ctx):
         players[server.id] = player
         player.start()
 
-client.run(TOKEN)
+client.run[TOKEN']
